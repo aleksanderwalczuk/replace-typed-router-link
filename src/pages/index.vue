@@ -1,7 +1,10 @@
 <template>
   <h1>Main Page</h1>
-  <router-link to="/nested"> go to nested page</router-link>
-  <ButtonLink to="/nested"></ButtonLink>
+  <div>
+  <router-link to="/nested">change url to non existent - no error</router-link>
+</div>
+
+  <ButtonLink to="/nested">change url to non existent - works as expected</ButtonLink>
 </template>
 <script setup lang="ts">
 import ButtonLink from "../components/ButtonLink.vue"
