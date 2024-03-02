@@ -2,10 +2,10 @@
   <h1>Main Page</h1>
   <div>
     <!-- router-link is overrode with AppLink.vue in main.ts  -->
-  <router-link to="/nested">change url to non existent - no error</router-link>
+  <router-link to="/nested/invalid-url">change url to non existent - no error</router-link>
 </div>
-
-  <ButtonLink to="/nested">change url to non existent - works as expected</ButtonLink>
+<!-- inherits router-link throws error as expected -->
+  <ButtonLink to="/nested/invalid-url">change url to non existent - works as expected</ButtonLink>
 </template>
 <script setup lang="ts">
 import ButtonLink from "../components/ButtonLink.vue"
