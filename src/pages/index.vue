@@ -1,6 +1,7 @@
 <template>
   <h1>Main Page</h1>
   <div>
+    <!-- router-link is overrode with AppLink.vue in main.ts  -->
   <router-link to="/nested">change url to non existent - no error</router-link>
 </div>
 
